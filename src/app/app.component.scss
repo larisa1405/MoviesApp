@@ -1,0 +1,13 @@
+.app-footer{
+    position: static;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+router-outlet {
+    flex: 1;
+  }

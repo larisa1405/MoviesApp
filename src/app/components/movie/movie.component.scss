@@ -1,0 +1,72 @@
+.results{
+    margin-left: 30px;
+}
+
+.search-movie {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 0px 20px;
+}
+
+.search-movie:hover {
+    background-color: grey;
+}
+
+.more {
+    background-color: rgb(56, 54, 54);
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: black;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+}
+
+.next-page {
+    background-color: rgb(56, 54, 54);
+    border-radius: 5px;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.next-page:hover{
+    background-color: black;
+}
+
+.previous-page {
+    background-color: rgb(56, 54, 54);
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.previous-page:hover {
+    background-color: black;
+}

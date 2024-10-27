@@ -1,0 +1,36 @@
+<div class="detailed-movies">
+    <div class="margin-title">
+        <h1> {{movie.Title}}</h1>
+        <h5>{{movie.Year}}  {{movie.Rated}}  {{movie.Runtime}} {{movie.Country}}</h5>
+    </div>
+    <div class="details">
+        <div class="">
+            <img *ngIf="movie.Poster != 'N/A'" class="" src={{movie.Poster}}>
+            <div class="col">
+                <h6 class="plot">{{movie.Plot}}</h6>
+                <h5 class="cast">Cast:</h5>
+                <p class="a">{{movie.Actors}}</p>
+                <h5 class="director">Director:</h5>
+                <p class="">{{movie.Director}}</p>
+                <h5 class="writers">Writers:</h5>
+                <p class="">{{movie.Writer}}</p>
+            </div>
+        </div>
+        <div>
+            <div class="col">
+                <h4 class="award">Awards:</h4>
+                <p>{{movie.Awards}}</p>
+            </div>
+            <div >
+                <h4 class="box-office">Box Office</h4>
+                <p>{{movie.BoxOffice}}</p>
+            </div>
+        </div>
+        <div>
+            <div *ngFor="let item of movie.Ratings">
+                <h5 class="rating">{{item.Source}}</h5>
+                <p>{{item.Value}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+
+<div class="results">
+    <div *ngIf="!result.Error"> 
+        <h2 class="">Results for "{{searchValue}}"</h2>
+        <p class="">{{result.totalResults}} results</p>
+    </div>
+    <div *ngIf="result.Error">
+        <h2 class="">Error: {{result.Error}}</h2>
+    </div>
+</div>
+<div *ngIf="!result.Error">
+    <div>
+        <div>
+            <div *ngFor="let item of movies" class="search-movie">
+                <div class="text-search">
+                    <img *ngIf="item.Poster != 'N/A' else defaultImg" src={{item.Poster}} width="130">
+                    <ng-template #defaultImg>
+                       <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1728&q=80" width="130"> 
+                    </ng-template>
+                </div>
+                <div>{{item.Title}} <br>Release: {{item.Year}}</div>
+                <div>
+                    <button class="more" (click)="goToMovie(item.imdbID)">See more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages">
+        <div class="row">
+            <button *ngIf="currentPage > 1" class="previous-page" (click)="onPreviousClick()"><i class="bi bi-arrow-left-circle-fill me-2"></i> Previous page</button>
+            <p class="col text-center pt-2">Page: {{currentPage}} out of {{numberOfPages}}</p>
+            <button *ngIf="currentPage != numberOfPages" class="next-page" (click)="onNextClick()">Next page<i class="bi bi-arrow-right-circle-fill ms-2"></i></button>
+        </div>
+    </div>
+
+</div>

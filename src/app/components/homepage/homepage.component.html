@@ -1,0 +1,35 @@
+<div class="background-container">
+    <div class="background">
+        <h1 class="h1-hp">Welcome to MovieHub!</h1>
+        <h2 class="h2-hp">Your ultimate destination for discovering and streaming movies!</h2>
+        <form (ngSubmit)="searchMovie()" class="search-bar">
+            <input name="searchValue" class="input-search" type="text" placeholder="Enter movie name..." [(ngModel)]="searchValue">
+            <button class="button-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" >
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+            </button>
+        </form>
+    </div>
+</div>
+<div class="favorites">
+    <h2 class="h2-favs">Here is a list of our favorite movies:</h2>
+    <div class="favorite-movies">
+        <div class="movie-show" *ngFor="let item of favoriteMovies" (click)="goToMovie(item.imdbID)">
+            <img class="img-favorite" src="{{item.Poster}}">
+            <p class="title-favorite">{{item.Title}}</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <img class="img-row" src="../../../assets/movie.jpg">
+    <div class="text-row">
+        <h1 class="h-row">Every movie you like <br> is on this website! <br> Don't believe it? Try it!</h1>
+        <p>This website is based on OMDb API, a free RESTful service <br> containing thousands of movies that is updated continuously by its community.</p>
+            <button class="btn-row">
+                <a class="link-row" href="http://www.omdbapi.com/">
+                    OMDb API
+                </a>
+            </button>
+    </div>
+</div>

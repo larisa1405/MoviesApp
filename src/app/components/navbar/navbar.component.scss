@@ -1,0 +1,41 @@
+.navbar{
+    background-color:black;
+    margin-bottom: 20px;
+    margin: -8px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    gap: 20px;
+}
+
+.aboutus{
+    color: white;
+    text-decoration: none;
+}
+
+.aboutus:hover{
+    text-decoration: underline;
+}
+
+.contact{
+    color: white;
+    text-decoration: none;
+}
+
+.contact:hover{
+    text-decoration: underline;
+}
+
+.main {
+    color: white;
+    text-decoration: none;
+}
+
+.main:hover{
+    text-decoration: underline;
+}
+
+
+

@@ -1,0 +1,131 @@
+.background-container {
+    position: relative; 
+    width: 100%;
+    height: 75vh; 
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    background-image: url(../../../assets/bk2.jpg);
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    background-position: center center;
+}
+
+.h1-hp {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.h2-hp {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.search-bar {
+    text-align: center;
+
+}
+
+.input-search {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: ridge;
+    width: 250px;
+    height: 21px;
+    padding-left: 7px;
+    font-style: italic;
+
+}
+
+.button-search {
+    margin-left: 3px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding-top: 2px;
+}
+
+.favorites {
+    margin-left: 70px;
+}
+
+.h2-favs{
+    font-size: 24px; 
+    font-weight: bold; 
+    padding-bottom: 2px; 
+    border-bottom: 2px solid #686664; 
+    width: fit-content; 
+    margin-bottom: 20px; 
+}
+
+.favorite-movies{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 0.7fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+
+.movie-show{
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    transition: .5s;
+    text-align: center;
+    position: relative;
+    background-color: rgb(151, 149, 148);
+    margin-bottom: 200px;
+}
+
+.movie-show:hover {
+    
+    background-color: rgba(39, 37, 37, 0.8);
+    cursor: pointer;
+}
+
+.img-favorite{
+    width: 200px;
+    height: 280px;
+}
+
+.title-favorite{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    
+}
+
+.img-row{
+    margin-top: 30px;
+    position: relative;
+    width: 50%;
+    height: 500px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+.h-row{
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+.btn-row{
+    background-color: #3d3c3c;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.link-row{
+    color: white;
+}
